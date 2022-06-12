@@ -289,8 +289,12 @@ struct ts_mmi_class_methods {
 enum ts_mmi_pm_mode {
 	TS_MMI_PM_DEEPSLEEP = 0,
 	TS_MMI_PM_GESTURE,
-	TS_MMI_PM_ACTIVE
-	};
+	TS_MMI_PM_ACTIVE,
+	TS_MMI_PM_GESTURE_SINGLE,
+	TS_MMI_PM_GESTURE_DOUBLE,
+	TS_MMI_PM_GESTURE_ZERO,
+	TS_MMI_PM_GESTURE_SWITCH,
+};
 
 enum ts_mmi_panel_event {
 	TS_MMI_EVENT_PRE_DISPLAY_OFF,
@@ -469,6 +473,9 @@ struct ts_mmi_dev {
 	dev_t			class_dev_no;
 	int			forcereflash;
 	unsigned char gesture_mode_type;
+#ifdef CONFIG_BOARD_USES_DOUBLE_TAP_CTRL
+	unsigned char gesture_mode_type;
+#endif
 	int			panel_status;
 	struct ts_mmi_dev_pdata	pdata;
 #if defined(CONFIG_DRM_PANEL_NOTIFICATIONS) || defined (CONFIG_DRM_PANEL_EVENT_NOTIFICATIONS)
