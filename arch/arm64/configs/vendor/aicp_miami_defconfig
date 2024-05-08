@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 5.4.274 Kernel Configuration
+# Linux/arm64 5.4.275 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)"
 CONFIG_GCC_VERSION=0
@@ -2339,12 +2339,12 @@ CONFIG_INPUT_UINPUT=y
 # CONFIG_INPUT_DRV2667_HAPTICS is not set
 # CONFIG_INPUT_HISI_POWERKEY is not set
 CONFIG_RBS_FOD_MMI=m
-CONFIG_INPUT_EGIS_FPS_MMI=m
+# CONFIG_INPUT_EGIS_FPS_MMI is not set
 # CONFIG_ET721_FOD is not set
 # CONFIG_EGIS_PANEL_NOTIFICATIONS is not set
 # CONFIG_INPUT_QPNP_POWER_ON_MMI is not set
 # CONFIG_FINGERPRINT_GOODIX_FOD_MMI is not set
-CONFIG_INPUT_FOCAL_FPS_MMI=m
+# CONFIG_INPUT_FOCAL_FPS_MMI is not set
 # CONFIG_RMI4_CORE is not set
 
 #
