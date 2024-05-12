@@ -39,3 +39,6 @@ config DRM_PANEL_NOTIFICATIONS
 
 config BOARD_USES_DOUBLE_TAP_CTRL
 	bool "Board uses Double Tap Control"
+
+config TOUCHCLASS_MMI_MULTIWAY_UPDATE_FW
+        bool "Touchscreen Update FW"
